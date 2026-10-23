@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>login</title>
-  </head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>IchiKado — вход</title>
+     <link rel="stylesheet" href="../Css/style.css">
+    </head>
   <body>
-    <form id="login-form">
-      <h2>Вход</h2>
-      <label for="login">Логин</label>
-      <input id="login" name="login" autocomplete="username" required>
+      <main class="page">
+      <section class="art">
+        <p class="logo">IchiKado</p>
+        <img src="../Css/i.webp" alt="Японский сад с пагодой">
+      </section>
 
-      <label for="password">Пароль</label>
-      <input id="password" name="password" type="password" autocomplete="current-password" required>
+      <section class="login">
+        <button class="language" type="button">＋ Eng ▾</button>
+        <div class="brand">IchiKado</div>
+        <div class="lantern" aria-hidden="true">🏮</div>
+        <h1>Welcome to IchiKado</h1>
 
-      <button type="buttonLogin">Войти</button>
-      <p id="message" aria-live="polite"></p>
+        <form>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <a class="forgot" href="#">Forgot password?</a>
 
-      <a href="register.html">Нету аккаунта</a>
-    </form>
+          <div class="divider">or</div>
+          <button class="google" type="button">Login with Google</button>
+          <button class="submit" type="submit">Login</button>
+
+          <div class="signup">
+            Don’t have an account? <a href="#">Sign up</a>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
