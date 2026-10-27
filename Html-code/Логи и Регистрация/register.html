@@ -3,25 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <title>Регистрация</title>
+     <link rel="stylesheet" href="../Css/styleRegistr.css">
   </head>
   <body>
-    <form id="Register-form">
-      <h2>Вход</h2>
-      <label for="Mail">Майл</label>
-      <input id="login" name="login" autocomplete="username" required>
+    <main class="page">
+      <section class="art">
+        <p class="logo">IchiKado</p>
+        <img src="../Фотки/i.webp" alt="Японский сад с пагодой">
+      </section>
 
-      <label for="login2">Логин</label>
-      <input id="login" name="login" autocomplete="username" required>
+      <section class="login register">
+        <button class="language" type="button">＋ Eng ▾</button>
+        <div class="brand">IchiKado</div>
+        <div class="lantern" aria-hidden="true">🏮</div>
+        <h1>Create your account</h1>
 
-      <label for="password">Пароль</label>
-      <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <form class="signup-form" novalidate>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full name"
+            autocomplete="name"
+            required>
 
-      <label for="password2">Пароль</label>
-      <input id="password2" name="password2" type="password2" autocomplete="current-password2" required>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="email"
+            required>
 
-      <button type="buttonRegister">Регистрация</button>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            autocomplete="new-password"
+            minlength="8"
+            required>
 
-      <a href="loginMain.html">Уже есть аккаунт</a>
-    </form>
+          <input type="password"
+            id="confirm"
+            name="confirm"
+            placeholder="Confirm password"
+            autocomplete="new-password"
+            minlength="8"
+            required>
+
+          <p class="hint" id="hint">Минимум 8 символов</p>
+
+          <label class="check">
+            <input type="checkbox" name="terms" required>
+            <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+          </label>
+
+          <div class="divider">or</div>
+
+          <button class="google" type="button">Sign up with Google</button>
+          <button class="submit" type="submit">Sign up</button>
+
+          <div class="signup">
+            Already have an account? <a href="../Логи и Регистрация/loginMain.html">Login</a>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

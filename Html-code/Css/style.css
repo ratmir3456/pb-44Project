@@ -20,9 +20,9 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  padding: 24px 16px;
+  padding: 1px  10px;
   background: #8e0008;
-  border-radius: 0 0 48% 0;
+  border-radius: 0 5% 90% 0;
 }
 
 .logo {
